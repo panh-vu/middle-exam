@@ -37,7 +37,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $('.viewall').click(function () {
-        window.location.href = 'product/product.html';
+        window.location.href = 'product.html';
     });
 });
 $(document).ready(function () {
