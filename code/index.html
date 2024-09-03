@@ -1,710 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florist Flowers</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
 
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="nav">
-        <div class="nav_logo">
-          <img src="./images/logo-removebg-preview.png" alt="logo"/>
-        </div>
-        <div class="topnav">
-          <div class="right-nav">
-              <a href="#burger-menu" class="burger-menu" onclick="menuToggle()">
-                <i class="fa-solid fa-bars"></i>
-              </a>
-          </div>
-          <div class="topnav-menu" id="burgerMenu" style="height:0rem;">
-            <div>
-                <ul id="list">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#blog">Blog</a></li>
-                </ul>
+        <nav class="nav">
+            <div class="nav_logo">
+                <img src="./images/logo-removebg-preview.png" alt="logo" />
             </div>
-        </div>
-      </div>
-        <ul>
-          <a href="#" class="nav_ultis"><i class="fa-solid fa-search"></i> </a>
-          <a href="#" class="nav_ultis"
-            ><i class="fa-solid fa-cart-plus"></i
-          ></a>
-          <a href="#" class="nav_ultis"><i class="fa-solid fa-user"></i></a>
-        </ul>
-      </nav>
+            <div class="topnav">
+                <div class="right-nav">
+                    <a href="#burger-menu" class="burger-menu" onclick="menuToggle()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="topnav-menu" id="burgerMenu" style="height:0rem;">
+                    <div>
+                        <ul id="list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="item">
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-search"></i> </a>
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-cart-plus"></i></a>
+                <a href="#" class="nav_ultis"><i class="fa-solid fa-user"></i></a>
+            </ul>
+        </nav>
     </header>
 
     <section>
-      <section class="hero">
-        <div class="hero-text">
-          <h1>Your Inspiring Heading</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            vel lectus nec dui bibendum varius.
-          </p>
-          <a href="#" class="cta-button">Learn More</a>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Your Inspiring Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                    vel lectus nec dui bibendum varius.
+                </p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="./images/pexels-alena-koval-233944-961402.jpg" alt="Hero Image" />
+            </div>
+        </section>
+        <div id="category" class="category">
+            <h1>Browse by Category</h1>
+            <div class="category_button">
+                <button class="btn-circle"><i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="btn-circle"><i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <ul class="category_list">
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>On Sale</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Featured</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Mixed Bouquets</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>One of a kind</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Seasonal</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Plants</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>On Sale</p>
+                    </button>
+                </li>
+                <li>
+                    <button class="button">
+                        <i class="fas fa-shopping-basket"></i>
+                        <p>Food, drink and gift</p>
+                    </button>
+                </li>
+            </ul>
         </div>
-        <div class="hero-image">
-          <img
-            src="./images/pexels-alena-koval-233944-961402.jpg"
-            alt="Hero Image"
-          />
-        </div>
-      </section>
-      <div id="category" class="category">
-        <h1>Browse by Category</h1>
-        <div class="category_button">
-          <button class="btn-circle"><i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="btn-circle"><i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-        <ul class="category_list">
-          <li>
-            <button class="button">
-                <i class="fas fa-shopping-basket"></i>
-                <p>On Sale</p>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-                <i class="fas fa-shopping-basket"></i>
-                <p>Featured</p>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-                <i class="fas fa-shopping-basket"></i>
-                <p>Mixed Bouquets</p>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <i class="fas fa-shopping-basket"></i>
-              <p>One of a kind</p>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-              <i class="fas fa-shopping-basket"></i>
-              <p>Seasonal</p>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-              <i class="fas fa-shopping-basket"></i>
-              <p>Plants</p>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-              <i class="fas fa-shopping-basket"></i>
-              <p>On Sale</p>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-              <i class="fas fa-shopping-basket"></i>
-              <p>Food, drink and gift</p>
-          </button>
-        </li>
-      </ul>
-    </div>
-    <nav>
-      <h4>- Our Products</h4>
-      <div class="flex"> 
-          <h1>Explore our Flowers</h1>
-      </div>
-     
-      <div class="previews">
-          <div class="preview preview1 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/baby1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/baby1.jpg"></div>
-                      <div><img src="images/baby2.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Baby Flower</h1>
-                  <div class="flex yellow">
-                      <h4>BRIGHT</h4>
-                      <h5>$100</h5>
-                      <h3>~ $80</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
+        <nav>
+            <h4>- Our Products</h4>
+            <div class="flex">
+                <h1>Explore our Flowers</h1>
+            </div>
+            <div class="previews">
+                <div class="preview preview1 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/baby1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/baby1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/baby2.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Baby Flower</h1>
+                        <div class="flex yellow">
+                            <h4>BRIGHT</h4>
+                            <h5>$100</h5>
+                            <h3>~ $80</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
 
-          <div class="preview preview2 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/cc1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/cc1.jpg"></div>
-                      <div><img src="images/cc2.jpg"></div>
-                      <div><img src="images/cc3.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Carnation Flower</h1>
-                  <div class="flex blue">
-                      <h4>BEAUTY</h4>
-                      <h5>$100</h5>
-                      <h3>~ $50</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-  
-          <div class="preview preview3 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/ctc1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/ctc1.jpg"></div>
-                      <div><img src="images/ctc2.jpg"></div>
-                      <div><img src="images/ctc3.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Hydrangea Flower</h1>
-                  <div class="flex pink">
-                      <h4>MYSTERY</h4>
-                      <h3>~ $60</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-  
-          <div class="preview preview4 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/cuc1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/cuc1.jpg"></div>
-                      <div><img src="images/cuc2.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Daisy Flower</h1>
-                  <div class="flex blue">
-                      <h4>PROSPERITY</h4>
-                      <h3>~ $59</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview5 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/hd1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/hd1.jpg" ></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Sun Flower</h1>
-                  <div class="flex blue">
-                      <h4>OPTIMISTIC</h4>
-                      <h3>~ $57</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview6 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/llan1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/llan1.jpg"></div>
-                      <div><img src="images/llan2.jpg"></div>
-                      <div><img src="images/llan3.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Lily of the Valley</h1>
-                  <div class="flex blue">
-                      <h4>HAPPINESS</h4>
-                      <h3>~ $79</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview7 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/hong1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/hong1.jpg"></div>
-                      <div><img src="images/hong2.jpg"></div>
-                      <div><img src="images/hong3.jpg"></div>
-                      <div><img src="images/hong4.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Rose</h1>
-                  <div class="flex blue">
-                      <h4>LOVE</h4>
-                      <h3>~ $92</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview8 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/tulip1.jpg"  id="big">
-                  <div class="small">
-                      <div><img src="images/tulip1.jpg"></div>
-                      <div><img src="images/tulip2.jpg"></div>
-                      <div><img src="images/tulip3.jpg"></div>
-                      <div><img src="images/tulip4.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Tulip</h1>
-                  <div class="flex blue">
-                      <h4>HEARTFELT</h4>
-                      <h3>~ $55</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview9 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/nhai1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/nhai1.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Jasmine</h1>
-                  <div class="flex blue">
-                      <h4>FAITHFUL</h4>
-                      <h3>~ $70</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview10 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/mdon1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/mdon1.jpg"></div>
-                      <div><img src="images/mdon2.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Peony</h1>
-                  <div class="flex blue">
-                      <h4>PEACE</h4>
-                      <h3>~ $45</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview11 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/starice1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/starice1.jpg"></div>
-                      <div><img src="images/statice2.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Statice</h1>
-                  <div class="flex blue">
-                      <h4>SWEET</h4>
-                      <h3>~ $55</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          <div class="preview preview12 flex">
-              <a class="del"><i class="fa-solid fa-x"></i></a>
-              <div class="left">
-                  <img src="images/mluong1.jpg" id="big">
-                  <div class="small">
-                      <div><img src="images/mluong1.jpg"></div>
-                      <div><img src="images/mluong2.jpg"></div>
-                  </div>
-              </div>
-              <div class="right">
-                  <h1>Persian Buttercup</h1>
-                  <div class="flex blue">
-                      <h4>PURE</h4>
-                      <h3>~ $75</h3>
-                  </div>
-                  <div class="sl flex">
-                      <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-                      <a>1</a>
-                      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                  <div class="flex">
-                      <button>Add to Cart</button>
-                      <a class="heart1"><i class="fa-regular fa-heart"></i></a>
-                      <a class="heart2"><i class="fa-solid fa-heart"></i></a>
-                  </div>
-                  <div></div>
-              </div>
-          </div>
-          
-      </div>
-      <div class="products flex"> 
-          <div class="product product1">
-              <img src="images/baby1.jpg">
-              <h3>Baby Flower</h3>
-              <div class="flex yellow">
-                  <div></div>
-                  <h4>BRIGHT</h4>
-                  <h5>$100</h5>
-                  <h3>~ $80</h3>
-                  <div></div>
-              </div>
-              <div class="sale">20% OFF</div>
-          </div>
-          <div class="product product2">
-              <img src="images/cc1.jpg">
-              <h3>Carnation Flower</h3>
-              <div class="flex blue">
-                  <div></div>
-                  <h4>BEAUTY</h4>
-                  <h5>$100</h5>
-                  <h3>~ $50</h3>
-                  <div></div>
-                  <div class="sale">50% OFF</div>
-              </div>
-          </div>
-          <div class="product product3">
-              <img src="images/ctc1.jpg">
-              <h3>Hydrangea Flower</h3>
-              <div class="flex pink">
-                  <div></div>
-                  <h4>MYSTERY</h4>
-                  <h3>~ $60</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product4">
-              <img src="images/cuc1.jpg">
-              <h3>Daisy Flower</h3>
-              <div class="flex green">
-                  <div></div>
-                  <h4>PROSPERITY</h4>
-                  <h3>~ $59</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product5">
-              <img src="images/hd1.jpg">
-              <h3>Sun Flower</h3>
-              <div class="flex yellow">
-                  <div></div>
-                  <h4>OPTIMISTIC</h4>
-                  <h3>~ $57</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product6">
-              <img src="images/llan1.jpg">
-              <h3>Lily of the Valley</h3>
-              <div class="flex blue">
-                  <div></div>
-                  <h4>HAPPINESS</h4>
-                  <h3>~ $79</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product7">
-              <img src="images/hong1.jpg">
-              <h3>Rose</h3>
-              <div class="flex pink">
-                  <div></div>
-                  <h4>LOVE</h4>
-                  <h3>~ $92</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product8">
-              <img src="images/tulip1.jpg">
-              <h3>Tulip</h3>
-              <div class="flex green">
-                  <div></div>
-                  <h4>HEARTFELT</h4>
-                  <h3>~ $55</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product9">
-              <img src="images/nhai1.jpg">
-              <h3>Jasmine</h3>
-              <div class="flex yellow">
-                  <div></div>
-                  <h4>FAITHFUL</h4>
-                  <h3>~ $70</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product10">
-              <img src="images/mdon1.jpg">
-              <h3>Peony</h3>
-              <div class="flex blue">
-                  <div></div>
-                  <h4>PEACE</h4>
-                  <h3>~ $45</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product11">
-              <img src="images/starice1.jpg">
-              <h3>Statice</h3>
-               <div class="flex pink">
-                  <div></div>
-                  <h4>SWEET</h4>
-                  <h3>~ $55</h3>
-                  <div></div>
-              </div>
-          </div>
-          <div class="product product12">
-              <img src="images/mluong1.jpg">
-              <h3>Persian Buttercup</h3>
-              <div class="flex green">
-                  <div></div>
-                  <h4>PURE</h4>
-                  <h3>~ $75</h3>
-                  <div></div>
-              </div>
-          </div>
-      </div>
-      <button class="viewall">View All</button>
-      <button class="viewless">View Less</button>
-  </nav>
-  <a href="javascript:;" class="up"><i class="fa-solid fa-arrow-up"></i></a>
-  
-    <div id="about-us" class="about-us">
-      <div class="about-us_item">
-        <div class="about-us_item_title">
-            <h1>Why People Choose Us</h1>
-        </div>
-        <div class="about-us_content">
-            <div class="about-us_icon">
-              <button class="btn-circle"><i class="fas fa-check"></i></button>
-                <h2>Easy Returns</h2>
-                <p>
-                  Our return policy is simple and that is why customers love our shop.
-                </p>
+                <div class="preview preview2 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/cc1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/cc1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/cc2.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/cc3.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Carnation Flower</h1>
+                        <div class="flex blue">
+                            <h4>BEAUTY</h4>
+                            <h5>$100</h5>
+                            <h3>~ $50</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="preview preview3 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/ctc1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/ctc1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/ctc2.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/ctc3.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Hydrangea Flower</h1>
+                        <div class="flex pink">
+                            <h4>MYSTERY</h4>
+                            <h3>~ $60</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="preview preview4 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/cuc1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/cuc1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/cuc2.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Daisy Flower</h1>
+                        <div class="flex blue">
+                            <h4>PROSPERITY</h4>
+                            <h3>~ $59</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview5 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/hd1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/hd1.jpg" alt="Thumbnail 1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Sun Flower</h1>
+                        <div class="flex blue">
+                            <h4>OPTIMISTIC</h4>
+                            <h3>~ $57</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview6 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/llan1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/llan1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/llan2.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/llan3.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Lily of the Valley</h1>
+                        <div class="flex blue">
+                            <h4>HAPPINESS</h4>
+                            <h3>~ $79</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview7 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/hong1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/hong1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/hong2.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/hong3.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/hong4.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Rose</h1>
+                        <div class="flex blue">
+                            <h4>LOVE</h4>
+                            <h3>~ $92</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview8 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/tulip1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/tulip1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/tulip2.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/tulip3.jpg" alt="Thumbnail 2">
+                            <img class="thumbnail" src="images/tulip4.jpg" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Tulip</h1>
+                        <div class="flex blue">
+                            <h4>HEARTFELT</h4>
+                            <h3>~ $55</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview9 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/nhai1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/nhai1.jpg" alt="Thumbnail 1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Jasmine</h1>
+                        <div class="flex blue">
+                            <h4>FAITHFUL</h4>
+                            <h3>~ $70</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview10 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <div class="big-image">
+                            <img class="mainImage" src="images/mdon1.jpg" alt="Big Product Image">
+                        </div>
+                        <!-- Small Images (Thumbnails) -->
+                        <div class="thumbnails">
+                            <img class="thumbnail" src="images/mdon1.jpg" alt="Thumbnail 1">
+                            <img class="thumbnail" src="images/mdon2.jpg" alt="Thumbnail 2">
+                    </div>
+                    <div class="right">
+                        <h1>Peony</h1>
+                        <div class="flex blue">
+                            <h4>PEACE</h4>
+                            <h3>~ $45</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview11 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <img src="images/starice1.jpg" id="big">
+                        <div class="small">
+                            <div><img src="images/starice1.jpg"></div>
+                            <div><img src="images/statice2.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Statice</h1>
+                        <div class="flex blue">
+                            <h4>SWEET</h4>
+                            <h3>~ $55</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="preview preview12 flex">
+                    <a class="del"><i class="fa-solid fa-x"></i></a>
+                    <div class="left">
+                        <img src="images/mluong1.jpg" id="big">
+                        <div class="small">
+                            <div><img src="images/mluong1.jpg"></div>
+                            <div><img src="images/mluong2.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h1>Persian Buttercup</h1>
+                        <div class="flex blue">
+                            <h4>PURE</h4>
+                            <h3>~ $75</h3>
+                        </div>
+                        <div class="sl flex">
+                            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                            <a>1</a>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="flex">
+                            <button>Add to Cart</button>
+                            <a class="heart1"><i class="fa-regular fa-heart"></i></a>
+                            <a class="heart2"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
             </div>
-            <div class="about-us_icon"> 
-              <button class="btn-circle"><i class="fas fa-headset"></i></button>
-                
-                <h2>Customer Service</h2>
-                <p>
-                  We offer amazing customer service no matter what happens.
-                </p>
+            <div class="products flex">
+                <div class="product product1">
+                    <img src="images/baby1.jpg">
+                    <h3>Baby Flower</h3>
+                    <div class="flex yellow">
+                        <div></div>
+                        <h4>BRIGHT</h4>
+                        <h5>$100</h5>
+                        <h3>~ $80</h3>
+                        <div></div>
+                    </div>
+                    <div class="sale">20% OFF</div>
+                </div>
+                <div class="product product2">
+                    <img src="images/cc1.jpg">
+                    <h3>Carnation Flower</h3>
+                    <div class="flex blue">
+                        <div></div>
+                        <h4>BEAUTY</h4>
+                        <h5>$100</h5>
+                        <h3>~ $50</h3>
+                        <div></div>
+                        <div class="sale">50% OFF</div>
+                    </div>
+                </div>
+                <div class="product product3">
+                    <img src="images/ctc1.jpg">
+                    <h3>Hydrangea Flower</h3>
+                    <div class="flex pink">
+                        <div></div>
+                        <h4>MYSTERY</h4>
+                        <h3>~ $60</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product4">
+                    <img src="images/cuc1.jpg">
+                    <h3>Daisy Flower</h3>
+                    <div class="flex green">
+                        <div></div>
+                        <h4>PROSPERITY</h4>
+                        <h3>~ $59</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product5">
+                    <img src="images/hd1.jpg">
+                    <h3>Sun Flower</h3>
+                    <div class="flex yellow">
+                        <div></div>
+                        <h4>OPTIMISTIC</h4>
+                        <h3>~ $57</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product6">
+                    <img src="images/llan1.jpg">
+                    <h3>Lily of the Valley</h3>
+                    <div class="flex blue">
+                        <div></div>
+                        <h4>HAPPINESS</h4>
+                        <h3>~ $79</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product7">
+                    <img src="images/hong1.jpg">
+                    <h3>Rose</h3>
+                    <div class="flex pink">
+                        <div></div>
+                        <h4>LOVE</h4>
+                        <h3>~ $92</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product8">
+                    <img src="images/tulip1.jpg">
+                    <h3>Tulip</h3>
+                    <div class="flex green">
+                        <div></div>
+                        <h4>HEARTFELT</h4>
+                        <h3>~ $55</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product9">
+                    <img src="images/nhai1.jpg">
+                    <h3>Jasmine</h3>
+                    <div class="flex yellow">
+                        <div></div>
+                        <h4>FAITHFUL</h4>
+                        <h3>~ $70</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product10">
+                    <img src="images/mdon1.jpg">
+                    <h3>Peony</h3>
+                    <div class="flex blue">
+                        <div></div>
+                        <h4>PEACE</h4>
+                        <h3>~ $45</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product11">
+                    <img src="images/starice1.jpg">
+                    <h3>Statice</h3>
+                    <div class="flex pink">
+                        <div></div>
+                        <h4>SWEET</h4>
+                        <h3>~ $55</h3>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="product product12">
+                    <img src="images/mluong1.jpg">
+                    <h3>Persian Buttercup</h3>
+                    <div class="flex green">
+                        <div></div>
+                        <h4>PURE</h4>
+                        <h3>~ $75</h3>
+                        <div></div>
+                    </div>
+                </div>
             </div>
-            <div class="about-us_icon">
-              <button class="btn-circle"><i class="fas fa-star"></i></button>
-                <h2>High Quality</h2>
-                <p>
-                  All of our products go through very strict inspection before we dispatch them.
-                </p>
+            <button class="viewall">View All</button>
+            <button class="viewless">View Less</button>
+        </nav>
+        <a href="javascript:;" class="up"><i class="fa-solid fa-arrow-up"></i></a>
+
+        <div id="about-us" class="about-us">
+            <div class="about-us_item">
+                <div class="about-us_item_title">
+                    <h1>Why People Choose Us</h1>
+                </div>
+                <div class="about-us_content">
+                    <div class="about-us_icon">
+                        <button class="btn-circle"><i class="fas fa-check"></i></button>
+                        <h2>Easy Returns</h2>
+                        <p>
+                            Our return policy is simple and that is why customers love our shop.
+                        </p>
+                    </div>
+                    <div class="about-us_icon">
+                        <button class="btn-circle"><i class="fas fa-headset"></i></button>
+
+                        <h2>Customer Service</h2>
+                        <p>
+                            We offer amazing customer service no matter what happens.
+                        </p>
+                    </div>
+                    <div class="about-us_icon">
+                        <button class="btn-circle"><i class="fas fa-star"></i></button>
+                        <h2>High Quality</h2>
+                        <p>
+                            All of our products go through very strict inspection before we dispatch them.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-      
-      <div class="about-us_review">
-        <div class="about-us_review--left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor
-          debitis soluta quasi alias, repellendus consectetur voluptatem animi
-          quam consequuntur deleniti tempore laudantium nam perspiciatis
-          doloribus quo officia illum molestias.
-        </div>
-        <div class="about-us_review--right">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-          magnam quibusdam aliquid dolore velit aspernatur ullam eaque dicta
-          odit deserunt quidem eius adipisci, animi, dolorum quo voluptatibus
-          a exercitationem error?
-        </div>
-      </div>
-    </div>
-  </section>
-  <nav>
-    <h4>- Our Blog</h4>
-    <div class="blogs"> 
-        <h1>Check Out our Blog</h1>
-        <div class="flex blog">
-            <div class="left">
-                <img src="left1.jpg">
-                <h3>Guide to Choosing and Preserving Fresh Flowers</h3>
-                <h4>TOP TIPS</h4>
-            </div>
-            <div class="right">
-                <img src="right1.jpg" alt="">
-                <h3>Trends in Modern Flower Decor</h3>
-                <h4>NEW IN</h4>
-            </div>
-        </div>
-        <div class="flex blog">
-            <div class="left">
-                <img src="left2.jpg"/>
-                <h3>How to Use Flowers</h3>
-                <h4>HOW TO</h4>
-            </div>
-            <div class="right">
-                <img src="right2.jpg">
-                <h3>Effectively Starting and Managing a Flower Shop</h3>
-                <h4>TOP TIPS</h4>
+
+            <div class="about-us_review">
+                <div class="about-us_review--left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor
+                    debitis soluta quasi alias, repellendus consectetur voluptatem animi
+                    quam consequuntur deleniti tempore laudantium nam perspiciatis
+                    doloribus quo officia illum molestias.
+                </div>
+                <div class="about-us_review--right">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    magnam quibusdam aliquid dolore velit aspernatur ullam eaque dicta
+                    odit deserunt quidem eius adipisci, animi, dolorum quo voluptatibus
+                    a exercitationem error?
+                </div>
             </div>
         </div>
-        <div class="flex blog">
-            <div class="left">
-                <img src="left3.jpg">
-                <h3>The Meaning of Gifting Flowers</h3>
-                <h4>BESTSELLERS</h4>
+    </section>
+    <nav>
+        <h4>- Our Blog</h4>
+        <div class="blogs">
+            <h1>Check Out our Blog</h1>
+            <div class="flex blog">
+                <div class="left">
+                    <img src="images/left1.jpg">
+                    <h3>Guide to Choosing and Preserving Fresh Flowers</h3>
+                    <h4>TOP TIPS</h4>
+                </div>
+                <div class="right">
+                    <img src="images/right1.jpg" alt="">
+                    <h3>Trends in Modern Flower Decor</h3>
+                    <h4>NEW IN</h4>
+                </div>
             </div>
-            <div class="right">
-                <img src="right3.jpg">
-                <h3>Popular Flower Varieties and Their Significance</h3>
-                <h4>TOP TIPS</h4>
+            <div class="flex blog">
+                <div class="left">
+                    <img src="images/left2.jpg" />
+                    <h3>How to Use Flowers</h3>
+                    <h4>HOW TO</h4>
+                </div>
+                <div class="right">
+                    <img src="images/right2.jpg">
+                    <h3>Effectively Starting and Managing a Flower Shop</h3>
+                    <h4>TOP TIPS</h4>
+                </div>
+            </div>
+            <div class="flex blog">
+                <div class="left">
+                    <img src="images/left3.jpg">
+                    <h3>The Meaning of Gifting Flowers</h3>
+                    <h4>BESTSELLERS</h4>
+                </div>
+                <div class="right">
+                    <img src="images/right3.jpg">
+                    <h3>Popular Flower Varieties and Their Significance</h3>
+                    <h4>TOP TIPS</h4>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-</nav>
-<nav class="letter">
-    <h4>- Our Newsletter</h4>
-    <h1>Sign Up to our Newsletter</h1>
-    <div class="input">
-        <input class="Email" placeholder="Your Email" >
-        <button class="send">Submit</button>
-    </div>
-</nav>
+        </div>
+    </nav>
+    <nav class="letter">
+        <h4>- Our Newsletter</h4>
+        <h1>Sign Up to our Newsletter</h1>
+        <div class="input">
+            <input class="Email" placeholder="Your Email">
+            <textarea class="feedback" placeholder="How can we help you?"></textarea>
+            <p class="success">Success! Thank for your feedback!
+            <p></p>
+            <button class="submit">Submit</button>
+
+        </div>
+    </nav>
