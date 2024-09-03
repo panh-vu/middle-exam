@@ -342,7 +342,6 @@ nav button:hover{
 }
 .right{
   padding: 70px;
-  background-color: #b8e09d;
   border-radius: var(--p);
 }
 
@@ -394,15 +393,6 @@ nav button:hover{
   text-align: center;
   color: palevioletred;
   background-color: hsl(352, 69%, 87%);
-}
-button{
-  font-size: 25px;
-  color: white;
-  background-color: #00CC96;
-  padding: 20px 40px;
-  border: 1px solid #00CC96;
-  border-radius: var(--p);
-  font-weight: bold;
 }
 .viewall{
   text-align: center;
