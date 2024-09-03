@@ -136,43 +136,46 @@ body {
 
 /* hero */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  height: 100vh;
-  background-color: #f4f4f4;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/pexels-iriser-1414042.jpg   '); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.hero-text {
-  max-width: 100%;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
 }
 
-.hero-text h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #333;
+.content {
+    position: relative;
+    z-index: 1; /* Place content above the overlay */
+    color: #fff;
+    text-align: center;
 }
-.hero-text p {
-  font-size: 1.2em;
-  margin: 20px 0;
-  color: #666;
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #fff;
-  background-color: #007bff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.cta-button:hover {
-  background-color: #0056b3;
-}
-.hero-image img {
-  width: 100%;
-  height: auto;
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 2px;
 }
 /* category */
 .category .category_button {
