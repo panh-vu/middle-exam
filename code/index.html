@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florist Flowers</title>
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
     />
+
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
   </head>
@@ -15,115 +17,159 @@
   <body>
     <header>
       <nav class="nav">
-        <div>logo</div>
-        <li class="li-header">
-          <ul>
-            <a href="">Home</a>
-            <a href="">Categories</a>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-          </ul>
-        </li>
-        <li class="li-header">
-          <ul>
-            <a href="">Search</a>
-            <a href="">Cart</a>
-            <a href="">User</a>
-          </ul>
-        </li>
+        <div class="nav_logo">
+          <img src="./images/logo-removebg-preview.png" alt="logo"/>
+        </div>
+        <div class="topnav">
+          <div class="right-nav">
+              <a href="#burger-menu" class="burger-menu" onclick="menuToggle()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+          </div>
+          <div class="topnav-menu" id="burgerMenu" style="height:0rem;">
+            <div>
+                <ul id="list">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+        <ul>
+          <a href="#" class="nav_ultis"><i class="fa-solid fa-search"></i> </a>
+          <a href="#" class="nav_ultis"
+            ><i class="fa-solid fa-cart-plus"></i
+          ></a>
+          <a href="#" class="nav_ultis"><i class="fa-solid fa-user"></i></a>
+        </ul>
       </nav>
     </header>
 
     <section>
-      <img src="./images/pexels-alena-koval-233944-961402.jpg" alt="" />
-      <div>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Your Inspiring Heading</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            vel lectus nec dui bibendum varius.
+          </p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./images/pexels-alena-koval-233944-961402.jpg"
+            alt="Hero Image"
+          />
+        </div>
+      </section>
+      <div id="category" class="category">
         <h1>Browse by Category</h1>
-        <button>1</button>
-        <button>2</button>
-        <li>
-          <ul>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-          </ul>
+        <div class="category_button">
+          <button class="btn-circle"><i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn-circle"><i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>On Sale</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Featured</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Mixed Bouquets</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <i class="fas fa-shopping-basket"></i>
+              <p>One of a kind</p>
+          </button>
         </li>
-      </div>
-      <div>
-        <h1>Explore our Product</h1>
-        <button>1</button>
-        <button>2</button>
-        <div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
-          </div>
+        <li>
+          <button class="button">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Seasonal</p>
+          </button>
+        </li>
+        <li>
+          <button class="button">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Plants</p>
+          </button>
+        </li>
+        <li>
+          <button class="button">
+              <i class="fas fa-shopping-basket"></i>
+              <p>On Sale</p>
+          </button>
+        </li>
+        <li>
+          <button class="button">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Food, drink and gift</p>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div id="about-us" class="about-us">
+      <div class="about-us_item">
+        <div class="about-us_item_title">
+            <h1>Why People Choose Us</h1>
         </div>
-        <button>3</button>
-      </div>
-      <div>
-        <h1>Why people choose us</h1>
-        <div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+        <div class="about-us_content">
+            <div class="about-us_icon">
+              <button class="btn-circle"><i class="fas fa-check"></i></button>
+                <h2>Easy Returns</h2>
+                <p>
+                  Our return policy is simple and that is why customers love our shop.
+                </p>
+            </div>
+            <div class="about-us_icon"> 
+              <button class="btn-circle"><i class="fas fa-headset"></i></button>
+                
+                <h2>Customer Service</h2>
+                <p>
+                  We offer amazing customer service no matter what happens.
+                </p>
+            </div>
+            <div class="about-us_icon">
+              <button class="btn-circle"><i class="fas fa-star"></i></button>
+                <h2>High Quality</h2>
+                <p>
+                  All of our products go through very strict inspection before we dispatch them.
+                </p>
+            </div>
         </div>
-        <div>
-          <div>1</div>
-          <div>2</div>
+    </div>
+      
+      <div class="about-us_review">
+        <div class="about-us_review--left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor
+          debitis soluta quasi alias, repellendus consectetur voluptatem animi
+          quam consequuntur deleniti tempore laudantium nam perspiciatis
+          doloribus quo officia illum molestias.
+        </div>
+        <div class="about-us_review--right">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+          magnam quibusdam aliquid dolore velit aspernatur ullam eaque dicta
+          odit deserunt quidem eius adipisci, animi, dolorum quo voluptatibus
+          a exercitationem error?
         </div>
       </div>
-    </section>jádfkjlsdalkf
-
-    <footer></footer>
-  </body>
-</html>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-content1">
