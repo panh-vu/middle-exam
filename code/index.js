@@ -10,7 +10,6 @@ function menuToggle() {
     }
 }
 
-// Add interactivity (e.g., clicking the button)
 // const buttons = document.querySelectorAll('.button');
 // buttons.forEach((button) => {
 //     button.addEventListener('click', () => {
@@ -45,3 +44,53 @@ function showReview(index) {
 
     document.getElementById('review-' + currentReview).style.display = 'flex';
 }
+showReview(currentReview);
+
+// $(document).ready(function () {
+//     $(".product").slice(0, 4).fadeIn()
+// });
+// $(document).ready(function () {
+//     $('.viewall').click(function () {
+//         // Navigate to the all-products page
+//         window.location.href = 'product.html';
+//     });
+// });
+// $(document).ready(function () {
+//     $(".heart2").hide()
+//     $(".heart1").click(function () {
+//         $(".heart1").hide()
+//         $(".heart2").show()
+//     })
+//     $(".heart2").click(function () {
+//         $(".heart2").hide()
+//         $(".heart1").show()
+//     })
+// })
+
+
+// $(document).ready(function () {
+//     $(".preview").hide();
+//     $(".product").click(function () {
+//         $(".preview").hide();
+//         var productIndex = $(this).attr('class').match(/\d+/)[0];
+//         $(".preview" + productIndex).show();
+//     });
+//     $(".del").click(function () {
+//         $(".preview").hide()
+//     })
+// });
+
+
+// $(document).ready(function() {
+//     $('.thumbnail').click(function() {
+//         // Find the closest parent .product-detail and then find the .mainImage within that context
+//         var newSrc = $(this).attr('src');
+//         $(this).closest('.preview').find('.mainImage').attr('src', newSrc);
+//     });
+// });
+// $(document).ready(function () {
+//     $(".success").hide();
+//     $(".submit").click(function () {
+//         $(".success").show()
+//     })
+// })
