@@ -37,8 +37,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $('.viewall').click(function () {
-        // Navigate to the all-products page
-        window.location.href = 'product.html';
+        window.location.href = 'product/product.html';
     });
 });
 $(document).ready(function () {
@@ -69,7 +68,6 @@ $(document).ready(function () {
 
 $(document).ready(function() {
     $('.thumbnail').click(function() {
-        // Find the closest parent .product-detail and then find the .mainImage within that context
         var newSrc = $(this).attr('src');
         $(this).closest('.preview').find('.mainImage').attr('src', newSrc);
     });
