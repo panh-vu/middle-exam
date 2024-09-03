@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florist Flowers</title>
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
     />
+
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
   </head>
@@ -15,115 +17,252 @@
   <body>
     <header>
       <nav class="nav">
-        <div>logo</div>
-        <li class="li-header">
-          <ul>
-            <a href="">Home</a>
-            <a href="">Categories</a>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-          </ul>
-        </li>
-        <li class="li-header">
-          <ul>
-            <a href="">Search</a>
-            <a href="">Cart</a>
-            <a href="">User</a>
-          </ul>
-        </li>
+        <div class="nav_logo">
+          <img src="./images/logo-removebg-preview.png" alt="logo"/>
+        </div>
+        <div class="topnav">
+          <div class="right-nav">
+              <a href="#burger-menu" class="burger-menu" onclick="menuToggle()">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+          </div>
+          <div class="topnav-menu" id="burgerMenu" style="height:0rem;">
+            <div>
+                <ul id="list">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+        <ul>
+          <a href="#" class="nav_ultis"><i class="fa-solid fa-search"></i> </a>
+          <a href="#" class="nav_ultis"
+            ><i class="fa-solid fa-cart-plus"></i
+          ></a>
+          <a href="#" class="nav_ultis"><i class="fa-solid fa-user"></i></a>
+        </ul>
       </nav>
     </header>
 
     <section>
-      <img src="./images/pexels-alena-koval-233944-961402.jpg" alt="" />
-      <div>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+            <p>FLOWERS THAT MAKE YOU HAPPY</p>
+        </div>
+    </section>
+      <!-- <section class="hero">
+        <div class="hero-text">
+          <h1>Your Inspiring Heading</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            vel lectus nec dui bibendum varius.
+          </p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./images/pexels-alena-koval-233944-961402.jpg"
+            alt="Hero Image"
+          />
+        </div>
+        </section>   -->
+    </section>
+      <div id="category" class="category">
         <h1>Browse by Category</h1>
-        <button>1</button>
-        <button>2</button>
-        <li>
-          <ul>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-          </ul>
-        </li>
+        <div class="category_button">
+          <button class="btn-circle"><i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="btn-circle"><i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <ul class="category_list">
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>On Sale</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Featured</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Mixed Bouquets</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>One of a kind</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Seasonal</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Plants</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>On Sale</p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Food, drink and gift</p>
+            </button>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h1>Explore our Product</h1>
-        <button>1</button>
-        <button>2</button>
-        <div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+      <div id="about-us" class="about-us">
+        <div class="about-us_item">
+          <div class="about-us_item_title">
+              <h1>Why People Choose Us</h1>
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+          <div class="about-us_content">
+              <div class="about-us_icon">
+                <button class="btn-circle"><i class="fas fa-check"></i></button>
+                  <h2>Easy Returns</h2>
+                  <p>
+                    Our return policy is simple and that is why customers love our shop.
+                  </p>
+              </div>
+              <div class="about-us_icon"> 
+                <button class="btn-circle"><i class="fas fa-headset"></i></button>
+                  
+                  <h2>Customer Service</h2>
+                  <p>
+                    We offer amazing customer service no matter what happens.
+                  </p>
+              </div>
+              <div class="about-us_icon">
+                <button class="btn-circle"><i class="fas fa-star"></i></button>
+                  <h2>High Quality</h2>
+                  <p>
+                    All of our products go through very strict inspection before we dispatch them.
+                  </p>
+              </div>
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+      </div>
+      <div class="review-container">
+        <h4 class="review-header">- Our Reviews</h4>
+        <h1 class="review-title">What our Customers are Saying</h1>
+        <div class="review-content">
+            <div class="review" id="review-1">
+                <img src="./images/ava1.jpg" alt="Profile Image" class="review-img">
+                <div class="review-text">
+                    <h3>Amy Smith</h3>
+                    <p>This is the best website I have ordered something from. I highly recommend.</p>
+                </div>
+            </div>
+            <div class="review" id="review-2" style="display: none;">
+                <img src="./images/ava2.jpg" alt="Profile Image" class="review-img">
+                <div class="review-text">
+                    <h3>John Doe</h3>
+                    <p>Excellent service and great quality products. Will definitely buy again!</p>
+                </div>
+            </div>
+            <div class="review" id="review-3" style="display: none;">
+                <img src="./images/ava3.jpg" alt="Profile Image" class="review-img">
+                <div class="review-text">
+                    <h3>Jane Roe</h3>
+                    <p>A wonderful experience from start to finish. Highly satisfied!</p>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="nav-button" id="prev">&#8249;</button>
+            <button class="nav-button" id="next">&#8250;</button>
+        </div>
+    </div>
+        <!-- <div class="about-us_review">
+          <div class="about-us_review--left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor
+            debitis soluta quasi alias, repellendus consectetur voluptatem animi
+            quam consequuntur deleniti tempore laudantium nam perspiciatis
+            doloribus quo officia illum molestias.
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+          <div class="about-us_review--right">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+            magnam quibusdam aliquid dolore velit aspernatur ullam eaque dicta
+            odit deserunt quidem eius adipisci, animi, dolorum quo voluptatibus
+            a exercitationem error?
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-content1">
+          <div class="logo">
+            <img src="./images/logo-removebg-preview.png" alt="logo"/>
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+          <div class="copyright">
+            <p>&copy; 2024 - All rights reserved </p>
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
           </div>
-          <div>
-            <img src="./images/flower1.jpg" alt="" />
-            <p>Flower 1</p>
-            <p>SUNCARE</p>
-            <p>$10</p>
+          <div class="settings-icon">
+              <a href="#"><i class="fas fa-cog"></i></a>
           </div>
         </div>
-        <button>3</button>
-      </div>
-      <div>
-        <h1>Why people choose us</h1>
-        <div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-        </div>
-        <div>
-          <div>1</div>
-          <div>2</div>
-        </div>
-      </div>
-    </section>jádfkjlsdalkf
+        
 
-    <footer></footer>
+        <div>
+          <h3>Categories</h3>
+          <ul>
+            <li>On Sale</li>
+            <li>Fetured</li>
+            <li>Mixed Bouquets</li>
+            <li>One of a kind</li>
+            <li>Special Occasions</li>
+            <li>Seasonal</li>
+            <li>Plants</li>
+            <li>Food, drinks and gifts</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Return Policy</li>
+            <li>Shipping</li>
+            <li>Data Protection</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Contact</li>
+            <li>Careers</li>
+            <li>Vision</li>
+            <li>Culture</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

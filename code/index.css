@@ -10,15 +10,492 @@ body {
 }
 
 .nav {
+    overflow: hidden;
+    background: none ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .nav_logo img {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+    justify-items: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background: none !important;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav button {
+    border: none;
+    cursor: pointer;
+}
+
+.topnav a {
+    color: var(--clr-nav-color);
+    text-align: center;
+    padding: 0.09rem 0.30rem;
+    text-decoration: none;
+    font-size: 1.063rem;
+}
+
+.topnav a:hover {
+    color: var(--hover-nav);
+}
+
+.topnav a.active {
+    color: var(--selected-nav-page);
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.nav-icon {
+    /* Navigation Icon Sizing - SVG Only */
+    width: 2em;
+    height: 2em;
+    padding: 0.09rem 0.15rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.disp_mode {
+    /* (Default) Dark / Light Mode - Icon Handling */
+    background: var(--activ-mode-icon) no-repeat;
+}
+
+.disp_mode:hover {
+    /* (Hover) Dark / Light Mode - Icon Handling */
+    background: var(--activ-hover-mode-icon) no-repeat;
+}
+
+.topnav-menu {
+    /* Burger Menu Content*/
+    width: 100%;
+    overflow: hidden;
+    transition: 1000ms;
+    background-color: none;
+    padding: 0;
+}
+
+.topnav-menu ul {
+    /* Burger Menu Content*/
+    float: right;
+    margin: 0;
+    list-style-type: none;
+}
+
+.topnav-menu a {
+    color: var(--clr-nav-color);
+    text-align: center;
+    padding: 0.313rem 0.313rem;
+    text-decoration: none;
+    font-size: 1.063rem;
+}
+
+.topnav-menu a:hover {
+    color: var(--hover-nav);
+}
+
+.topnav-menu a.active {
+    color: var(--selected-nav-page);
+}
+
+
+/*
+    Navigation Burger Menu
+*/
+.burger-menu div {
+    width: 1.875rem;
+    height: 0.25rem;
+    background-color: var(--clr-nav-color);
+    margin: 0.313rem 0;
+    border-radius: 1.563rem;
+}
+
+.burger-menu {
+    width: 1.875rem;
+}
+
+.burger-menu:hover div {
+    width: 1.875rem;
+    background-color: var(--hover-nav);
+}
+
+/* hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/pexels-iriser-1414042.jpg   '); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place content above the overlay */
+    color: #fff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+/* .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #666;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+} */
+
+/* category */
+.category .category_button {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.btn-circle {
+    background-color:#F6F7FB;
+    border: none;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* Add more styling as needed */
+}
+.btn-circle:hover {
+    background-color: #EDEFF4;
+}
+.btn-circle i {
+    font-size: 1.2rem;
+    /* Adjust icon size as needed */
 }
 
-.li-header {
-  list-style: none;
+.btn-circle p{
+    margin-top: 80px;
 }
 
-img {
-  width: 100%;
+
+/* Đặt lại kiểu mặc định cho danh sách */
+ul {
+    list-style: none;
+}
+
+/* Lưới danh sách các thành phần */
+.category_list {
+    display: flex;
+    gap: 140px; /* Khoảng cách giữa các ô vuông */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Kiểu nút */
+.button {
+    width: 100px; /* Kích thước ô vuông */
+    height: 100px;
+    border-radius: 10px; /* Bo góc */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F7FB; /* Màu nền */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-direction: column; /* Căn giữa theo chiều dọc */
+}
+
+/* Hiệu ứng hover */
+.button:hover {
+    background-color: #EDEFF4;
+}
+
+/* Kiểu biểu tượng */
+.button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kiểu văn bản */
+.button p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+
+/* about us */
+.about-us_item {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us_item_title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us_icon {
+    flex: 1;
+    padding: 25px;
+    border: none;
+    color:black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us_icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-us_review {
+  display: flex;
+  flex-direction: column;
+} */
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+.review-header {
+    color: #556ee6;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.review-content {
+    position: relative;
+    height: 200px;
+}
+
+.review {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #5bc49f;
+}
+
+.review-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.2; /* Tăng line-height để căn chỉnh tốt hơn */
+}
+
+.review-text p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+    max-width: 80%;
+    line-height: 1.5; /* Tăng line-height để căn chỉnh tốt hơn */
+}
+ 
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.2);
+}
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    width: 140px;
+    margin-top: none;
+    margin-bottom: 20px;
+}
+    
+
+.footer-content1{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+footer ul {
+    list-style: none;
+    padding:20px;
+}
+
+footer ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons a,
+.settings-icon a {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons a:hover,
+.settings-icon a:hover {
+    color: #666;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
 }
